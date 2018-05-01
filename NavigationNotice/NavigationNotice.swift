@@ -251,7 +251,7 @@ open class NavigationNotice {
             }
         }
         
-        func panGestureAction(_ gesture: UIPanGestureRecognizer) {
+        @objc func panGestureAction(_ gesture: UIPanGestureRecognizer) {
             if (position == .top && contentOffsetY >= 0) || position == .bottom && contentOffsetY < 0 {
                 hide(false)
                 return
